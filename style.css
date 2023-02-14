@@ -1,7 +1,94 @@
+@font-face {
+  font-family: norse;
+  src: url(/fonts/Norse-Bold.otf);
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9fafb;
+}
+
 .container {
   display: flex;
 }
 
 .vertical {
   flex-direction: column;
+}
+
+div.left, div.right {
+  height: 100vh;
+}
+
+div.left {
+  flex: 2;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  justify-content: space-evenly;
+}
+
+img.logo {
+  max-height: 150px;
+}
+
+div.logo {
+  background-color: rgba(0, 0, 0, .5);
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px 15px;
+}
+
+.logo > span {
+  font-family: norse;
+  font-size: 120px;
+  color: white;
+  margin-left: 25px;
+}
+
+div.right {
+  flex: 3;
+  align-items: left;
+  justify-content: center;
+  padding-left: 50px;
+  margin-right: 200px;
+}
+
+form {
+  flex: 1;
+  justify-content: space-around;
+  max-height: 50vh;
+}
+
+.fields > * > * {
+  margin: 16px;
+}
+
+label {
+  margin-bottom: 8px;
+  padding-left: 4px;
+  font-size: 20px;
+}
+
+input {
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: blue;
+}
+
+button.submit {
+  background-color: #596D48;
+  padding: 18px 24px;
+  font-size: 24px;
+  border-radius: 10px;
+  color: white;
+}
+
+.buttons > p > a {
+  color: #596D48;
 }
